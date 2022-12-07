@@ -1,0 +1,13 @@
+name: infra-test
+description: VPC + EKS + RDS for test
+runtime: nodejs
+template:
+  config:
+    aws:region:
+      description: The AWS region to deploy into
+      default: eu-west-3
+
+# https://github.com/pulumi/examples
+# https://www.pulumi.com/registry/packages/awsx/api-docs/ec2/vpc
+# https://www.pulumi.com/registry/packages/eks/api-docs/
+# https://www.pulumi.com/docs/guides/crosswalk/aws/eks/
